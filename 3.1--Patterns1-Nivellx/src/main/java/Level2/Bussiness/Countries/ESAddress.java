@@ -1,4 +1,4 @@
-package Level2.Bussiness;
+package Level2.Bussiness.Countries;
 
 import Level2.Bussiness.Interfaces.Address;
 
@@ -15,6 +15,7 @@ public class ESAddress implements Address {
         this.zip = zip;
     }
 
+    @Override
     public String getFullAddress() {
         return street + ", " + city + ", " + state + " " + zip;
     }

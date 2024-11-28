@@ -1,8 +1,8 @@
-package Level2;
+package Level3;
 
-import Level2.Presentation.MainMenu;
+import Level3.Presentation.MainMenu;
 
-public class MainLevel2 {
+public class MainLevel3 {
     public static void main(String[] args) {
 
         MainMenu mainMenu = new MainMenu();
