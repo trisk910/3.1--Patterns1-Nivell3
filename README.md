@@ -1,23 +1,48 @@
-#Nivell 1
+# Pràctica de Patrons de Disseny en Java
 
-Singleton
+En aquesta pràctica aprendrem a identificar i construir programes emprant patrons de disseny. La utilització de patrons és fonamental en la construcció d'un software extensible i reutilitzable. El llenguatge Java, així com tots els frameworks de software, estan fets d'acord amb els patrons més importants del software.
 
-Crea una classe que repliqui el funcionament del comando 'Undo'. Aquesta classe serà utilitzada per la classe Main, que permetrà introduir opcions per consola.
+## Nivell 1 - Singleton
+En aquest nivell, implementarem el patró **Singleton** per crear una classe `Undo` que repliqui el funcionament del comando 'Undo'.
 
-La classe 'Undo' ha de guardar les últimes comandes introduïdes. Ha de permetre afegir o eliminar comandes, així com llistar les últimes comandes introduïdes (semblant a la comanda 'history' en Linux).
-La classe 'Undo' ha d'implementar imprescindiblement un patró Singleton.
+### Requisits:
+- La classe `Undo` ha de guardar les últimes comandes introduïdes.
+- Ha de permetre afegir o eliminar comandes.
+- Ha de llistar les últimes comandes introduïdes (semblant a la comanda 'history' en Linux).
+- Ha de ser una implementació del patró **Singleton**.
+- Ha de ser utilitzada per la classe `Main`, que permetrà introduir opcions per consola.
 
-#Nivell 2
+## Nivell 2 - Abstract Factory
+En aquest nivell, implementarem el patró **Abstract Factory** per crear un gestor de direccions i números de telèfon internacionals.
 
-Abstract Factory
+### Requisits:
+- L'aplicació ha de permetre afegir a l'agenda adreces i números de telèfon internacionals.
+- Tenint en compte els diferents formats dels diferents països, s'ha de construir l'agenda, les adreces i els telèfons mitjançant el patró **Abstract Factory**.
 
-Crea un petit gestor de direccions i números de telèfon internacionals.
+## Nivell 3 - Command
+En aquest nivell, implementarem el patró **Command** per gestionar un pàrquing de diferents vehicles.
 
-L'aplicació ha de permetre afegir a l'agenda, adreces i números de telèfon internacionals. Tenint en compte els diferents formats dels diferents països, construeix l'agenda, les adreces i els telèfons implementant un patró Abstract Factory.
+### Requisits:
+- S'ha de dissenyar un pàrquing que contingui 4 tipus de vehicles: un cotxe, una bicicleta, un avió i un vaixell.
+- Implementar el patró **Command** per gestionar les accions dels vehicles.
+- Les accions han de ser: `arrencar`, `accelerar` i `frenar`.
 
-#Nivell 3
+## Instal·lació i Execució
+1. Clona aquest repositori:
+   ```bash
+   git clone https://github.com/el-teu-usuari/el-teu-repositori.git
+   ```
+2. Obre el projecte en el teu entorn de desenvolupament preferit (Eclipse, IntelliJ, VS Code).
+3. Compila i executa la classe `Main` per provar cada nivell de la pràctica.
 
-Command
+## Contribució
+Si vols contribuir a aquest projecte, si us plau, fes un fork del repositori i crea una pull request amb les teves millores.
 
-Dissenya un pàrquing de 4 vehicles: un cotxe, una bicicleta, un avió i un vaixell. 
-Mostra com funciona el patró Command que implementa els mètodes arrencar, accelerar i frenar per a cada tipus de vehicle.
+## Llicència
+Aquest projecte està sota la llicència MIT. Vegeu el fitxer `LICENSE` per a més informació.
+
+---
+
+**Autoria:**
+- Nom: Marc Bernabeu
+- Contacte: @trisk910
